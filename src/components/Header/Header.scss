@@ -1,0 +1,37 @@
+.nav{
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    a{
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 5px;
+    align-items: center;
+    
+
+         &::after,&::before{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background-color: black;
+            display: inline-block;
+            transition: 0.5s;
+            position: relative;
+            
+         }
+
+        &:hover{
+            &::after,&::before{
+              width: 100%;
+            }
+        }
+    }
+}  
